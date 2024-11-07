@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+        font-family: 'Poppins', sans-serif;
+        background-color: #003b3b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        min-height: 100vh;
+        padding-top: 100px; /* Espaço para o header */
+        padding-bottom: 120px; /* Espaço para o footer */
+ 
+  
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Garantir que o header fique sobre o conteúdo */
+}
+
+header img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-weight: bold;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+    main {
+        display: flex;
+        justify-content: flex-start; /* Alinha o formulário à esquerda */
+        align-items: center;
+        width: 100%;
+        padding-left: 20px; /* Ajuste a margem conforme necessário */
+    }
+    
+
+
+.container {
+    background-color: #ffffff; /* Fundo do formulário em verde escuro */
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.411);
+    width: 340px;
+    height: 55vh;
+    margin-top: 5vh;
+    color: #000; /* Cor do texto branco */
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 5vh;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#formMessage {
+    margin-top: 10px;
+    color: red;
+}
+
+.icones{
+   
+
+    height: 15px;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end; /* Alinha os ícones à direita */
+    gap: 15px;
+    align-self: flex-start; /* Move a div icones para o topo do footer */
+    padding-right: 20px; /* Adiciona um afastamento da borda direita */
+
+
+}
+
+.icones{
+   
+
+    height: 15px;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end; /* Alinha os ícones à direita */
+    gap: 15px;
+    align-self: flex-start; /* Move a div icones para o topo do footer */
+    padding-right: 20px; /* Adiciona um afastamento da borda direita */
+
+
+}
+
+footer {
+    
+    background-color: #0a4f40;
+         color: white;
+         padding: 95px 100px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: fixed; /* Fixar o footer na parte inferior */
+         bottom: 0; /* Alinhar o footer ao fundo da tela */
+         width: 100%; /* Fazer o footer ocupar a largura total */
+         box-sizing: border-box; /* Incluir o padding na largura total */
+         height: 95px;
+        
+     }
+     .links {
+         display: flex;
+         gap: 50px;
+     }
+     
+     .links div h4 {
+         font-size: 10px;
+         margin-bottom: 10px;
+     }
+     
+     .links ul {
+         list-style: none;
+         padding: 0;
+     }
+     
+     .links ul li {
+         margin-bottom: 5px;
+     }
+     
+     .links ul li a {
+         color: white;
+         text-decoration: none;
+         font-size: 14px;
+         font-family: 'Times New Roman', Times, serif;
+     }
+     
+     .direitos {
+         text-align: center;
+         margin-right: 155px;
+     }
+     
+     .direitos p {
+         margin: 10px 0;
+         font-size: 14px;
+         text-align: center;
+     }
+     
+     .direitos a {
+         color: white;
+         text-decoration: none;
+         font-size: 14px;
+         margin: 0 5px;
+     }
+  

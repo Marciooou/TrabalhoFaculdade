@@ -1,68 +1,24 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #003b3b;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
     font-family: 'Poppins', sans-serif;
-}
-
-.containerhome {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    background-color: #006666;
-    border-radius: 15px;
-    box-shadow: 100px 4px 20px rgba(0, 0, 0, 0.2);
-    height: 50vh;
-    margin: 10px;
-    margin-top: 5vh;
-}
-
-h1{
-    
-    color: white;
-}
-p{
-    margin-top: 50px;
-    color: whitesmoke;
-}
-strong{
-    color: black;
-}
-.text-content {
-    flex: 1;
-    padding-right: 20px;
-   
-}
-
-.text-content h1 {
-    font-size: 2em;
-    margin: 0;
-}
-
-.text-content p {
-    font-size: 1.1em;
-    line-height: 2;
-    margin-top: 50px;
-}
-
-
-.imagem {
+    background-color: #003b3b;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
-   margin-top: 50px;
-   margin-bottom: 50px;
-}
 
-.imagem img {
-    width: 200px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    
+    min-height: 100vh;
+    padding-top: 100px;
+    /* Espaço para o header */
+    padding-bottom: 120px;
+    /* Espaço para o footer */
+
+
 }
 
 
@@ -72,7 +28,12 @@ header {
     justify-content: space-between;
     background-color: #f3f3f3;
     padding: 20px;
-    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Garantir que o header fique sobre o conteúdo */
 }
 
 header img {
@@ -83,21 +44,146 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    text-decoration: none
-    
 }
 
 header nav ul li {
     font-weight: bold;
-    text-decoration: none
-    
 }
 
-header a{
-    font-family: 'Poppins', sans-serif;
+header a {
     color: #000000;
     text-decoration: none;
 }
+
+main {
+
+    display: flex;
+    gap: 30px;
+
+    width: 80%;
+    margin-top: 100px;
+    /* Espaço adicional para header fixo */
+
+
+}
+
+.buttonm{
+    background-color: #4CAF50; /* cor verde */
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.button- {
+    background-color: #ff4d4d; /* cor vermelha */
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.valortotal{
+
+    margin-left: 25px;
+}
+.valortotal h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+ 
+}
+.valortotal p{
+
+    text-align: center;
+}
+.lucro {
+    background-color: #ffffff33; /* Fundo translúcido */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 100px;
+}
+
+.valores .valortotal,
+.extrato {
+    background-color: #53a393;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    flex: 1;
+    
+    align-items: center;
+}
+
+.valores h2 {
+    margin-top: 0;
+    border-radius: 100px;
+}
+
+.extrato h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.extrato p{
+    margin-top: 10px;
+    margin-right: 500px;
+}
+
+.extrato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #34dfdf8c; /* Cor mais escura */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 50px;
+    float: right;
+}
+
+.valores {
+    background-color: #53a393;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+
+.valores h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    color: white;
+    font-weight: bold;
+}
+
+form label,
+form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #e3e3e3;
+    color: #666;
+}
+
 
 
 .icones{

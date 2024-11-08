@@ -1,0 +1,134 @@
+ /* Reset básico */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #003b3b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px; /* Espaço para o header */
+    padding-bottom: 120px; /* Espaço para o footer */
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Garantir que o header fique sobre o conteúdo */
+}
+
+header img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-weight: bold;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.icones {
+    height: 15px;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end; /* Alinha os ícones à direita */
+    gap: 15px;
+    align-self: flex-start; /* Move a div icones para o topo do footer */
+    padding-right: 20px; /* Adiciona um afastamento da borda direita */
+}
+
+footer {
+    background-color: #0a4f40;
+    color: white;
+    padding: 95px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixar o footer na parte inferior */
+    bottom: 0; /* Alinhar o footer ao fundo da tela */
+    width: 100%; /* Fazer o footer ocupar a largura total */
+    box-sizing: border-box; /* Incluir o padding na largura total */
+    height: 95px;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+}
+
+.links div h4 {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 5px;
+}
+
+.links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.direitos {
+    text-align: center;
+    margin-right: 155px;
+}
+
+.direitos p {
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.direitos a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+p{
+    text-align: left;
+    margin-right: 150px;
+}
+
+.text {
+    line-height: 3;
+    color:#caeff0;
+    text-align: left;
+}
+
+.text strong {
+    font-size: 1.1em;
+}
+

@@ -57,7 +57,9 @@ main {
     margin-top: 0;
     border-radius: 100px;
 }
-
+a{
+    text-decoration: none;
+}
 .help-btn {
     background-color: #f76c6c;
     border: none;
@@ -135,75 +137,112 @@ form input {
 .icones{
    
 
-        height: 15px;
-        font-size: 24px;
-        display: flex;
-        justify-content: flex-end; /* Alinha os ícones à direita */
-        gap: 15px;
-        align-self: flex-start; /* Move a div icones para o topo do footer */
-        padding-right: 20px; /* Adiciona um afastamento da borda direita */
-    
-    
-}
+    height: 15px;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end; /* Alinha os ícones à direita */
+    gap: 15px;
+    align-self: flex-start; /* Move a div icones para o topo do footer */
+    padding-right: 20px; /* Adiciona um afastamento da borda direita */
 
+
+}
 
 footer {
     
-   background-color: #0a4f40;
-        color: white;
-        padding: 95px 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed; /* Fixar o footer na parte inferior */
-        bottom: 0; /* Alinhar o footer ao fundo da tela */
-        width: 100%; /* Fazer o footer ocupar a largura total */
-        box-sizing: border-box; /* Incluir o padding na largura total */
-        height: 95px;
-    }
-    .links {
-        display: flex;
-        gap: 50px;
-    }
-    
-    .links div h4 {
-        font-size: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .links ul {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .links ul li {
-        margin-bottom: 5px;
-    }
-    
-    .links ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 14px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
-    .direitos {
+    background-color: #0a4f40;
+         color: white;
+         padding: 95px 100px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: fixed; /* Fixar o footer na parte inferior */
+         bottom: 0; /* Alinhar o footer ao fundo da tela */
+         width: 100%; /* Fazer o footer ocupar a largura total */
+         box-sizing: border-box; /* Incluir o padding na largura total */
+         height: 95px;
         
+     }
+     .links {
+         display: flex;
+         gap: 50px;
+     }
+     
+     .links div h4 {
+         font-size: 10px;
+         margin-bottom: 10px;
+     }
+     
+     .links ul {
+         list-style: none;
+         padding: 0;
+     }
+     
+     .links ul li {
+         margin-bottom: 5px;
+     }
+     
+     .links ul li a {
+         color: white;
+         text-decoration: none;
+         font-size: 14px;
+         font-family: 'Times New Roman', Times, serif;
+     }
+     
+     .direitos {
+         text-align: center;
+         margin-right: 155px;
+     }
+     
+     .direitos p {
+         margin: 10px 0;
+         font-size: 14px;
+         text-align: center;
+     }
+     
+     .direitos a {
+         color: white;
+         text-decoration: none;
+         font-size: 14px;
+         margin: 0 5px;
+     }
+  
+     .container2 {
+        width: 800px;
+        text-align: left;
+        margin-left: 5vw;
+     }
+     .step {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .step-number {
+        font-size: 25px;
+        margin-right: 15px;
+        color: white;
+       
+    }
+
+    .line {
+        border-left: 2px solid #fff;
+        height: 50px;
+        margin-left: 9px;
+    }
+
+    .text {
+        line-height: 1.5;
+        color: white;
+    }
+
+    .text strong {
+        font-size: 1.1em;
+    }
+
+    .footer-text {
         text-align: center;
-        margin-right: 155px;
+        font-size: 0.9em;
+        margin-top: 30px;
+        color:white;
     }
-    
-    .direitos p {
-        margin: 10px 0;
-        font-size: 14px;
-        
-    }
-    
-    .direitos a {
-        color: white;
-        text-decoration: none;
-        font-size: 14px;
-        margin: 0 5px;
-    }
-
-

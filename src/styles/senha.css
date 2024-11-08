@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003b3b;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.logo {
+    
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.login-box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #064917;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.411);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 0.9em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #218838;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.privacy-notice {
+    font-size: 0.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.help-link {
+    font-size: 0.9em;
+    color:black;
+    text-decoration: none;
+}
+
+.help-link:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.new-to-amazon {
+    font-size: 0.9em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.entrar {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #000;
+    background-color: #e7e9ec;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.entrar:hover {
+    background-color: #d4d6da;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+}

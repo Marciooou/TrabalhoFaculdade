@@ -1,71 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WealthWise</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./src/imagem/Logoempres.png" type="image/jpeg">
-    
-    
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Home</title>
 </head>
+
+
 <body>
     <header>
         <img src="./src/imagem/iconenew.png" alt="WEALTHWISE">
-      
+
         <nav>
             <ul>
-                <li><a href="home.html"> Home </a></li>
-                <li><a href="investimento.html">Investimentos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="cadastro.html">Cadastra-se</a></li>
-                <li><a href="entrar.html">Entrar</a></li>
+               
+                <li><a href="./src/pages/investimento.html">Investimentos</a></li>
+                <li><a href="./src/pages/sobre.html">Sobre</a></li>
+                <li><a href="./src/pages/cadastro.html">Cadastra-se</a></li>
+                <li><a href="./src/pages/entrar.html">Entrar</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="financeiro">
-            <h2>Dados financeiros</h2>
-            <button class="help-btn">Help</button>
-            <form>
-                <label>Perfil do investidor:</label>
-                <input type="text" placeholder="Seu objetivo em R$">
+        <div class="containerhome">
+            <div class="text-cont">
+                <h1>WEALTHWISE</h1> <h3>Sua Nova Forma de Gerenciar Finanças Pessoais</h3>
+                <p> Descubra uma nova maneira de cuidar da sua vida financeira com o <strong> Wealthwise </strong>. Nosso site oferece uma plataforma intuitiva e fácil de usar, projetada para ajudar você a tomar o controle total da sua saúde financeira.
+                <br>
+                <strong>Controle suas despesas: </strong>Organize seus gastos de forma simples e pratique, para identificar onde é possível economizar e onde você pode melhorar.
+                <br>
+                <strong>Planeje seu futuro financeiro: </strong> Crie orçamentos personalizados, estabeleça metas de economia e acompanhe seu progresso em tempo real.
+                <br>
+                <strong>Invista de forma inteligente: </strong> Acesse ferramentas e dicas de especialistas para começar a investir com segurança e de acordo com o seu perfil financeiro.
+                <br>
+                <strong>Acompanhe suas contas e cartões: </strong> Conecte suas contas bancárias, cartões de crédito e outras fontes de receita para ter uma visão completa de sua situação financeira.
+                <br>
+                <strong>Receba alertas e lembretes: </strong> Nunca mais perca uma data de pagamento ou uma oportunidade de economizar. Receba notificações que ajudam a manter suas finanças em dia.
+                <br>
+                <strong>Relatórios detalhados: </strong> Receba relatórios detalhados sobre sua evolução financeira, com gráficos e análises que facilitam o entendimento do seu desempenho.
 
-                <label>Salário:</label>
-                <input type="text" placeholder="Seu salário">
-
-                <label>Gasto mensal:</label>
-                <input type="text" placeholder="Seu gasto mensal">
-
-                <label>Tipo de investimento:</label>
-                <input type="text" placeholder="Seu tipo de investimento">
-                
-                <button class="btn-extrato">Extrato</button>
-                <button class="btn-atualizar">Atualizar</button>
-            </form>
-        </div>
-
-        <div class="despesas">
-            <h3>Despesas e dinheiro restante</h3>
-            <div id="pie-chart"></div>
-            <div class="dados-despesas">
-                <div class="valor-restante">Valor restante: </div>
-                <div class="despesas-totais">Despesas: </div>
+                </p>
             </div>
+
+
+
+            <div class="imagem">
+                <img src="./src/imagem/home2.jpg" alt="">
+                <img src="./src/imagem/home1.png" alt="">
+            </div>
+           
+    
         </div>
 
-        <div class="investimentos">
-            <h2>Investimentos</h2>
-            <div class="grafico">Variação no mercado Taxa Selic</div>
-            <div class="estimativa">
-                <h4>Estimativa</h4>
-                <label class="tempo">Tempo:</label>
-                <input type="text" value="63 Dias" disabled>
-            </div>
-        </div>
+
+
     </main>
 
     <footer>
@@ -78,7 +72,7 @@
                     <li><a href="#">Sobre nós</a></li>
                 </ul>
             </div>
-           
+
             <div>
                 <h4>COMUNIDADE</h4>
                 <ul>
@@ -100,4 +94,3 @@
         </div>
     </footer>
 </body>
-</html>

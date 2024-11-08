@@ -66,12 +66,13 @@ header a {
 .container {
     background-color: #ffffff; /* Fundo do formulário em verde escuro */
     padding: 20px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.411);
-    width: 340px;
+    width: 800px;
     height: 55vh;
     margin-top: 5vh;
     color: #000; /* Cor do texto branco */
+    margin-left: 50px;
 }
 
 h1 {
@@ -102,6 +103,10 @@ button {
     cursor: pointer;
     height: 5vh;
     margin-top: 20px;
+    
+}
+button a{
+    text-decoration: none;
 }
 
 button:hover {
@@ -111,20 +116,6 @@ button:hover {
 #formMessage {
     margin-top: 10px;
     color: red;
-}
-
-.icones{
-   
-
-    height: 15px;
-    font-size: 24px;
-    display: flex;
-    justify-content: flex-end; /* Alinha os ícones à direita */
-    gap: 15px;
-    align-self: flex-start; /* Move a div icones para o topo do footer */
-    padding-right: 20px; /* Adiciona um afastamento da borda direita */
-
-
 }
 
 .icones{
@@ -200,3 +191,100 @@ footer {
          margin: 0 5px;
      }
   
+     .container2 {
+        width: 800px;
+        text-align: left;
+        margin-left: 5vw;
+     }
+     .step {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .step-number {
+        font-size: 25px;
+        margin-right: 15px;
+        color: white;
+       
+    }
+
+    .line {
+        border-left: 2px solid #fff;
+        height: 50px;
+        margin-left: 9px;
+    }
+
+    .text {
+        line-height: 1.5;
+        color: white;
+    }
+
+    .text strong {
+        font-size: 1.1em;
+    }
+
+    .footer-text {
+        text-align: center;
+        font-size: 0.9em;
+        margin-top: 30px;
+        color:white;
+    }
+   
+    
+    @media (max-width: 768px) {
+        header nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        main {
+            padding-left: 10px;
+            flex-direction: column;
+        }
+    
+        .container, .container2 {
+            width: 100%;
+            margin-left: 0;
+            padding: 15px;
+        }
+    
+        footer {
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        .links {
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .icones {
+            padding-right: 0;
+            justify-content: center;
+            margin-top: 15px;
+        }
+    
+        .direitos {
+            margin: 0;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        header nav ul {
+            font-size: 14px;
+        }
+    
+        .step-number {
+            font-size: 20px;
+        }
+    
+        .direitos p, .direitos a {
+            font-size: 12px;
+        }
+    
+        button {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }

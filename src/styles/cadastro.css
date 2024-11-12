@@ -69,7 +69,7 @@ header a {
     border-radius: 20px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.411);
     width: 800px;
-    height: 55vh;
+    height: 60vh;
     margin-top: 5vh;
     color: #000; /* Cor do texto branco */
     margin-left: 50px;
@@ -293,6 +293,17 @@ footer {
         border: 1px solid #00C22B;
     }
     
-    .nao-preenchido{
+    .no-preenchido{
         border: 1px solid red;
+    }
+
+    .obrigatorio {
+    
+        display: none;
+    }
+
+    .obrigatorio-ativo {
+        color: red;
+        font-size: 0.5rem;
+       display: block;
     }

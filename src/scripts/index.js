@@ -17,22 +17,35 @@
 //         return regex.test(email);
 //     }
 // });
-const inputsTexts = document.querySelectorAll (".input-form")
+const inputsTexts = document.querySelectorAll(".input-form")
 console.log("input", inputsTexts);
 
 const form = document.getElementById('registrationForm');
 const btn = document.getElementById("btn")
-btn.addEventListener("click", (e) =>{
-e.preventDefault()
+btn.addEventListener("click", (e) => {
+    e.preventDefault()
 
-inputsTexts.forEach(input => {
-    if(input.value === " "){
-        input.classList.remove("preenchido")
-        input.classList.add("no-preenchido")
-        console.log("oi");
-    }else{
-        input.classList.remove("no-preenchido")
-        input.classList.add("preench")
-    }
-} )
+    inputsTexts.forEach(input => {
+        // console.log("value",input.value);
+        let allFilled = true;
+
+        if (!input.value) {
+            input.classList.remove("preenchido")
+            input.classList.add("no-preenchido")
+            input.nextElementSibling.classList.remove('obrigatorio')
+            input.nextElementSibling.classList.add('obrigatorio-ativo')
+            console.log("oi");
+            allFilled = false
+        } else {
+            input.classList.remove("no-preenchido")
+            input.classList.add("preenchido")
+            input.nextElementSibling.classList.add('obrigatorio')
+            input.nextElementSibling.classList.remove('obrigatorio-ativo')
+            
+        }
+
+        if (allFilled) {
+            window.location.href = "validar.html"; // Substitua pelo caminho desejado
+        }
+    })
 })

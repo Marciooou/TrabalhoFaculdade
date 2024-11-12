@@ -288,3 +288,11 @@ footer {
             padding: 8px;
         }
     }
+
+    .preenchido{
+        border: 1px solid #00C22B;
+    }
+    
+    .nao-preenchido{
+        border: 1px solid red;
+    }

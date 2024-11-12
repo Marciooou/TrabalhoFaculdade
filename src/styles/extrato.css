@@ -143,7 +143,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #34dfdf8c; /* Cor mais escura */
+    background-color: #29adad8c; /* Cor mais escura */
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -152,7 +152,7 @@ main {
 }
 
 .valores {
-    background-color: #53a393;
+    background-color: #29adad8c;
     padding: 20px;
     border-radius: 10px;
     color: white;

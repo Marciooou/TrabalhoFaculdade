@@ -50,7 +50,10 @@
 
         <div class="despesas">
             <h3>Despesas e dinheiro restante</h3>
-            <div id="pie-chart"></div>
+            <div id="pie-chart" style="width: 100px; height: 100px;">
+                <canvas id="pie-chart"></canvas>
+            </div>
+            
             <div class="dados-despesas">
                 <div class="valor-restante">Valor restante: </div>
                 <div class="despesas-totais">Despesas: </div>
@@ -99,5 +102,8 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../scripts/script.js"></script>
+
 </body>
 </html>
